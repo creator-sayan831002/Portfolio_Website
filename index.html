@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class = "hero-header">
+        <div class = "wrapper">
+            <header>
+                <div class = "logo">
+                    <i class ="fa-solid fa-a"></i>
+                    <div class ="logo-text">SD</div>
+                </div>
+                <nav>
+                    <div class = "togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class ="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class ="container">
+                <div class = "hero-pic">
+                    <img src="Sayan_Studio_pic.jpg" alt="Profile Picture">
+                </div>
+                <div class="hero-text">
+                    <h5>
+                        Hi I'm <span class = "input">Front-End Developer</span>
+                    </h5>
+                    <h1>Sayan Das</h1>
+                    <p>
+                        I am a Front-End Developer with a passion for creating beautiful and functional websites.
+                        I specialize in HTML, CSS, and JavaScript, and I love bringing designs to life.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="mailto:sayandas9b35@gmail.com" class="btn">Contact</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sayan-das-a1a81b312"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        /** creaing button cick show hide navbar **/
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelectorAll(".navlinks li");
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+        var typed = new Typed('.input', {
+            strings: ['Web Designer', 'Web Developer', 'UI/UX Designer'],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+</body>
+</html>
